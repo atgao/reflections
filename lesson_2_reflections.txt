@@ -9,14 +9,23 @@ everything.
 
 How can you use the staging area to make sure you have one commit per logical
 change?
+you can use git diff --staged to compare it with your preivous commit, making sure that your changes make logical sense
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+when you want to try out a new feature but still want to keep the original code/develop the original code/develop
+that way you can easily switch back and forth between the features
 
 How do the diagrams help you visualize the branch structure?
+it helps you see which commit is the parent of which commit and the reachability of the commits
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+merging two branches together brings in all the changes from one branch to the other. git keeps track of the point where
+the two codes were originally the same (the parent) and merges in all the commits from that point on so it knows which
+lines to keep and which lines to delete
 
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+it allows for you to have a checkpoint in case you forget to sav eyour work and doing merges manually allows you to make
+merges at points that make sense/when things are fully developed
